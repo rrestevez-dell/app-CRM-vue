@@ -1,0 +1,15 @@
+{
+  "clientes": [
+    {
+      "id": "aeeb",
+      "nombre": "Raydel",
+      "apellidos": "Estévez",
+      "text_2": "rrestevez2010@gmail.com",
+      "telefono": "123-123-1234",
+      "empresa": "Universidad Central Marta Abreu de Las Villa ",
+      "puesto": "Profesor ",
+      "estado": true,
+      "email_5": "rrestevez2010@gmail.com"
+    }
+  ]
+}

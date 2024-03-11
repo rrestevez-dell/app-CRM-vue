@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formato de teléfono</title>
+</head>
+<body>
+
+<label for="telefono">Teléfono:</label>
+<input type="text" id="telefono" placeholder="XXX-XXX-XXX" maxlength="11">
+
+<script>
+document.getElementById('telefono').addEventListener('input', function(event) {
+    // Obtener el valor del campo de entrada
+    let input = event.target.value;
+    
+    // Eliminar los caracteres no numéricos
+    input = input.replace(/\D/g, '');
+    
+    // Formatear el número de teléfono (xxx-xxx-xxx)
+    if (input.length > 2) {
+        input = input.substring(0, 3) + '-' + input.substring(3);
+    }
+    if (input.length > 6) {
+        input = input.substring(0, 7) + '-' + input.substring(7, 10);
+    }
+    
+    // Asignar el valor formateado de vuelta al campo de entrada
+    event.target.value = input;
+});
+</script>
+
+</body>
+</html>
